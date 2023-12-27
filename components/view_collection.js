@@ -5,7 +5,7 @@ export default function ViewCollection() {
     return (
         <div className={styles.container_view_collection}>
             <div className={styles.collection_name}>
-                <h2>Machinegun Girl's Pass [PREMIUM]</h2>
+                <h2>Machinegun Girl&apos;s Pass [PREMIUM]</h2>
             </div>
             <div className={styles.block_chain}>
                 <div>
