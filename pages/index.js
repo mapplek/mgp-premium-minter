@@ -29,7 +29,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Machinegun Girl\'s Pass PREMIUM</title>
+                <title>Machinegun Girl&apos;s Pass PREMIUM</title>
                 <link rel="icon" href="/favicon.ico" sizes="32x32" />
             </Head>
             
