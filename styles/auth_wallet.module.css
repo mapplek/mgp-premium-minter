@@ -1,0 +1,33 @@
+.body {
+    margin: auto;
+    font-family: courier;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.block_wallet {
+    display: flex;
+}
+
+.wallet_button {
+    height: 35px;
+    margin: 10px;
+    color: rgb(59, 62, 106);
+    background-color: #5dc2fc;
+    background-image: linear-gradient(160deg, #50b7f3 0%, #b5fff8 100%);
+
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.address_label {
+    vertical-align: middle;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px;
+}

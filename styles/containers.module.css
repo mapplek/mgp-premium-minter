@@ -1,0 +1,165 @@
+.block_operate_nfts_mint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #a6a6a6 100%);
+
+}
+
+.block_operate_nfts_name_change {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d00ab;
+    background-image: linear-gradient(180deg, #4d00ab 0%, #ce94ff 100%);
+
+
+}
+
+.text_area {
+    height: 70px;
+    margin: 10px;
+    background-color: #ffffff7d;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_area input {
+    width: 280px;
+    height: 40px;
+}
+
+.loading_area {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft_info_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.nft_info_area table {
+    border-collapse: collapse;
+}
+
+.nft_info_area td {
+    height: 40px;
+    border: 1px solid white;
+}
+
+.nft_info_area td:first-child {
+    width: 170px;
+}
+
+.nft_info_area td:last-child {
+    width: 220px;
+    text-align: center;
+}
+
+.naming_area {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+}
+
+.restrict_msg_area {
+    margin: 10px;
+    color: rgb(136, 0, 0);
+    background-color: rgba(255, 202, 202, 1);
+    border: 2px solid rgb(136, 0, 0);
+}
+
+.input_caution_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title_block {
+    margin: 10px;
+}
+
+.description_block p {
+    font-size: 12px;
+}
+
+.submit_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+.button_style {
+    margin: 0 30px;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.no_button {
+    margin: 0 30px;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    background-color: white;
+
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.modal_section {
+    color: white;
+    background-color: #333;
+    width: 250px;
+    border: 2px solid gray;
+    padding: 2px 2px 2px 5px;
+}
+
+.modal_text_block li {
+    padding: 10px 0;
+}
+
+.modal_text_block p {
+    font-size: 14px;
+}
+
+.notice_mint_success {
+    width: 95%;
+    text-align: center;
+    color: rgb(0, 100, 0);
+    border-radius: 5px;
+    background-color: #ade6bd;
+    line-height: 10px;
+}
+
+.notice_mint_failure {
+    width: 95%;
+    text-align: center;
+    color: rgb(136, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(255, 202, 202, 1);
+    line-height: 10px;
+}
+
+.notice_mint_success p {
+    padding: 0 0 0 10px;
+}

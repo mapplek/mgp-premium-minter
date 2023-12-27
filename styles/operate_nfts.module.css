@@ -1,0 +1,58 @@
+.container_operate_nfts {
+    width: 500px;
+    margin: auto;
+    color: white;
+}
+
+.block_select_menu {
+    margin: 20px 0 0;
+    display: flex;
+}
+
+.tab_mint {
+	display: inline-block;
+	font-size: 16px;
+	padding: .8em 1.6em .4em .8em;
+	position: relative;
+	color: #fff;
+    background-color: #fff;
+    border: none;
+	z-index: 1;
+}
+.tab_mint::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+    background-color: #000000;
+	transform: scaleY(1.3) perspective(.6em) rotateX(5deg);
+	transform-origin: bottom left;
+	border-radius: 8px 8px 0 0;
+}
+
+.tab_name_change {
+	display: inline-block;
+	font-size: 16px;
+	padding: .8em 1.6em .4em .8em;
+	position: relative;
+	color: #fff;
+    background-color: #fff;
+    border: none;
+	z-index: 1;
+}
+.tab_name_change::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+    background-color: #4d00ab;
+	transform: scaleY(1.3) perspective(.6em) rotateX(5deg);
+	transform-origin: bottom left;
+	border-radius: 8px 8px 0 0;
+}
