@@ -20,7 +20,7 @@ export default function ContainerChangeName(props) {
     const [userPassName, setUserPassName] = useState();
 
     const mgpContract = {
-        address: process.env.NEXT_PUBLIC_TESTNET_CONTRACT_ADDRESS,
+        address: process.env.NEXT_PUBLIC_MAINNET_CONTRACT_ADDRESS,
         abi: abi
     };
 
@@ -73,7 +73,7 @@ export default function ContainerChangeName(props) {
     }, [ownerMintedAmount]);
 
     const { config } = usePrepareContractWrite({
-        address: process.env.NEXT_PUBLIC_TESTNET_CONTRACT_ADDRESS,
+        address: process.env.NEXT_PUBLIC_MAINNET_CONTRACT_ADDRESS,
         abi: abi,
         functionName: 'changePassName',
         value: parseEther('0.01'),

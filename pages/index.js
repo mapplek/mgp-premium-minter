@@ -1,5 +1,5 @@
 import { alchemyProvider } from 'wagmi/providers/alchemy'
-import { goerli } from 'wagmi/chains'
+import { mainnet } from 'wagmi/chains'
 import { infuraProvider } from 'wagmi/providers/infura'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 import { WagmiConfig, createConfig, configureChains } from 'wagmi'
@@ -8,15 +8,15 @@ import Head from 'next/head'
 
 
 const { publicClient } = configureChains(
-    [goerli],
+    [mainnet],
     [
-        alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_TESTNET_ALCHEMY_API_KEY }),
-        infuraProvider({ apiKey: process.env.NEXT_PUBLIC_TESTNET_INFURA_API_KEY }),
+        alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_MAINNET_ALCHEMY_API_KEY }),
+        infuraProvider({ apiKey: process.env.NEXT_PUBLIC_MAINNET_INFURA_API_KEY }),
     ],
 )
 
 const connector = new MetaMaskConnector({
-    chains: [goerli]
+    chains: [mainnet]
 })
 
 const config = createConfig({

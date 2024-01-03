@@ -21,7 +21,7 @@ export default function ContainerMint(props) {
     const [paused, setPaused] = useState(true);
 
     const mgpContract = {
-        address: process.env.NEXT_PUBLIC_TESTNET_CONTRACT_ADDRESS,
+        address: process.env.NEXT_PUBLIC_MAINNET_CONTRACT_ADDRESS,
         abi: abi
     };
 
@@ -91,7 +91,7 @@ export default function ContainerMint(props) {
     }, [totalSupply]);
 
     const { config } = usePrepareContractWrite({
-        address: process.env.NEXT_PUBLIC_TESTNET_CONTRACT_ADDRESS,
+        address: process.env.NEXT_PUBLIC_MAINNET_CONTRACT_ADDRESS,
         abi: abi,
         functionName: 'mint',
         value: parseEther('0.03'),
@@ -129,10 +129,10 @@ export default function ContainerMint(props) {
                         <tbody>
                             <tr>
                                 <td>ミント数</td>
-                                {(totalSupply && maxSupply) &&
+                                {maxSupply &&
                                     <td>[ {totalSupply} / {maxSupply} ]</td>
                                 }
-                                {(!totalSupply || !maxSupply) &&
+                                {!maxSupply &&
                                     <td>
                                         <div className={styles.loading_area}>
                                             <Loading />
@@ -236,7 +236,7 @@ export default function ContainerMint(props) {
                         {mintData && !isLoading && !isError && isSuccess &&
                             <div className={styles.notice_mint_success}>
                                 <p>ミントに成功しました！</p>
-                                <p><a href='https://testnets.opensea.io/ja/account'>マイコレクションを確認する</a></p>
+                                <p><a href='https://opensea.io/ja/account'>マイコレクションを確認する</a></p>
                             </div>
                         }
                         {isError &&
